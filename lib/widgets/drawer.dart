@@ -9,7 +9,7 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       elevation: 3.0,
       child: Container(
-        color: Colors.deepPurple,
+        color: Colors.white,
         child: ListView(
           // ignore: prefer_const_literals_to_create_immutables
           children: [
@@ -25,26 +25,26 @@ class MyDrawer extends StatelessWidget {
             const ListTile(
               leading: Icon(
                 CupertinoIcons.home,
-                color: Colors.white,
+                color: Colors.deepPurple,
               ),
               title: Text("Home"),
-              textColor: Colors.white,
+              textColor: Colors.deepPurple,
             ),
             const ListTile(
               leading: Icon(
                 CupertinoIcons.profile_circled,
-                color: Colors.white,
+                color: Colors.deepPurple,
               ),
               title: Text("Profile"),
-              textColor: Colors.white,
+              textColor: Colors.deepPurple,
             ),
             const ListTile(
               leading: Icon(
                 CupertinoIcons.ant,
-                color: Colors.white,
+                color: Colors.deepPurple,
               ),
               title: Text("Logout"),
-              textColor: Colors.white,
+              textColor: Colors.deepPurple,
             )
           ],
         ),
