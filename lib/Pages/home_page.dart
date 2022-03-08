@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:first_application/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -11,14 +12,13 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("NETFLIX"),
-        foregroundColor: Colors.red,
         titleTextStyle: const TextStyle(fontWeight: FontWeight.bold),
       ),
       body: Container(
         child: Center(child: Text("test $a application" + a.toString())),
         color: Colors.transparent,
       ),
-      drawer: const Drawer(),
+      drawer: const MyDrawer(),
     );
   }
 }
