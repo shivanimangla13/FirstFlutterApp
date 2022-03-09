@@ -32,6 +32,7 @@ class _HomepageState extends State<Homepage> {
     final decodeData = jsonDecode(json);
     var productsData = decodeData["products"];
     list = List.from(productsData).map((e) => Catalogue.fromMap(e)).toList();
+    await Future.delayed(const Duration(seconds: 2));
     setState(() {});
   }
 
